@@ -1,6 +1,6 @@
-Changelog
-[Unreleased]
-Added
+#Changelog
+##[Unreleased]
+##Added
 Configuración inicial del proyecto utilizando React Vite.
 Configuración del servidor JSON utilizando JSON Server para simular la API.
 Changed
