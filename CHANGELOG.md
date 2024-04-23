@@ -5,6 +5,9 @@
 Configuración inicial del proyecto utilizando React Vite.
 Configuración del servidor JSON utilizando JSON Server para simular la API.
 Se le añade Capa de servicios
+Se le añade funcionalidad a botones (Delete, Edit)
+Se crea nuevo componente llamado "ModalEdit", es cual esta a un 76% de funcionabilidad.
+Se añade nuevo servicios (Delete, Edit)
 
 ### Changed
 
