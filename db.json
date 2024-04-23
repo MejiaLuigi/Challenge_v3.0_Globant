@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "id": "4",
+      "avatar": "/src/assets/img/icon_first.png",
+      "name": "luigi",
+      "surName": "acevedo",
+      "email": "email@email.com"
+    },
+    {
+      "id": "5",
+      "avatar": "/src/assets/img/icon_first.png",
+      "name": "Luigi6",
+      "surName": "mejia",
+      "email": "luis.hoyos@globant.com"
+    },
+    {
+      "id": "6",
+      "avatar": "/src/assets/img/icon_first.png",
+      "name": "Luigi7",
+      "surName": "mejia",
+      "email": "luis.hoyos@globant.com"
+    }
+  ]
+}

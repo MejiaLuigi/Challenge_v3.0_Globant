@@ -4,6 +4,7 @@
 ### Added
 Configuración inicial del proyecto utilizando React Vite.
 Configuración del servidor JSON utilizando JSON Server para simular la API.
+Se le añade Capa de servicios
 
 ### Changed
 
