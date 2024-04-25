@@ -1,10 +1,10 @@
-import "../App.css";
 import React, { useState } from "react";
 import { ModalEditUsers } from "./ModalEditUser";
 
-export function CardUser({ users, deleteData, editUserHandler }) {
+export function CardUser(props) {
+  const 
   const [show, setShow] = useState(false);
-  const [userToEdit, setUserToEdit] = useState({});
+  const [userToEdit, setUserToEdit] = useState([]);
 
   const handleClose = () => setShow(false);
   const handleShow = (userCard) => {
@@ -27,21 +27,19 @@ export function CardUser({ users, deleteData, editUserHandler }) {
               <p>{userCard.email}</p>
               <hr />
               <div className="content-buttons">
-                <button onClick={() => handleShow(userCard)}>Edit</button>
+                <button onClick={handleShow(userCard)}>Edit</button>
                 <button onClick={() => deleteData(userCard.id)}>Delete</button>
               </div>
             </div>
           ))}
         </div>
       </div>
-      {show && (
-        <ModalEditUsers
-          show={show}
-          handleClose={handleClose}
-          editUserHandler={editUserHandler}
-          user={userToEdit}
-        />
-      )}
+      <ModalEditUsers
+        show={show}
+        handleClose={handleClose}
+        editData={editData}
+        user={userToEdit}
+      />
     </>
   );
 }

@@ -9,14 +9,17 @@ Se le añade funcionalidad a botones (Delete, Edit)
 Se crea nuevo componente llamado "ModalEdit", es cual esta a un 76% de funcionabilidad.
 Se añade nuevo servicios (Delete, Edit)
 
-### Changed
 
+
+### Changed
+Se cambian funciones  handleSaveChanges
 ### Deprecated
 
 ### Removed
-
+se remueve la función handleInputChang
 ### Fixed
-
+Se repara funcionalidad de los servicios, edit y delete
+se repara vista de modal
 <!-- [0.1.0] - YYYY-MM-DD
 Added
 Componente principal para mostrar datos de la API simulada.

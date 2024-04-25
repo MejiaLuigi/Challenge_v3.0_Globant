@@ -1,18 +1,23 @@
 import { useState } from "react";
 import iconUser from '../assets/img/icon_first.png'
 
+const generateRandomId = () => {
+    const randomId = Math.random().toString(36).substring(2);
+    return randomId.substring(0, 5); // Truncar el ID a 5 caracteres
+  };
+
 export function FormRegister({onFormSubmit}) {
 
     const [name, setName] = useState ('');
     const [surName, setSurName] = useState ('');
     const [email, setEmail] = useState ('');
-    const [idCounter, setIdCounter] = useState(0);
+    // const [idCounter, setIdCounter] = useState(null);
 
     const handleSubmit = (event) => {
         event.preventDefault();
 
         const formData = {
-            id: `${idCounter}`,
+            id: `${generateRandomId()}`,
             avatar: iconUser,
             name: name,
             surName: surName,
@@ -20,7 +25,7 @@ export function FormRegister({onFormSubmit}) {
         }
         
         console.log("look this data: ", formData)
-        setIdCounter(prevCounter => prevCounter + 1);
+        // setIdCounter(generateRandomId);
         onFormSubmit(formData)
     }
 
