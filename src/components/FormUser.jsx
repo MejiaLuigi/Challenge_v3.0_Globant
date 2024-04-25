@@ -1,5 +1,5 @@
 import { useState } from "react";
-import iconUser from '../assets/img/icon_first.png'
+import iconUser from '../assets/img/iconContacts.png'
 
 const generateRandomId = () => {
     const randomId = Math.random().toString(36).substring(2);
@@ -31,6 +31,7 @@ export function FormRegister({onFormSubmit}) {
 
     return(
         <form className="form-content" onSubmit={handleSubmit}>
+            <h3>Add New Contact</h3>
         <div className="form-content-input">
                 <input
                 className="name-content"
@@ -42,7 +43,7 @@ export function FormRegister({onFormSubmit}) {
                 required
             />
             <input
-                className="lastName-content"
+                className="surName-content"
                 type="text"
                 name="surName"
                 placeholder="Enter Last Name"

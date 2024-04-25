@@ -7,15 +7,20 @@ import { FormRegister } from "./components/FormUser";
 import { CardUser } from "./components/CardUser";
 import { deleteUser } from "./services/deleteUser";
 import { editUser } from "./services/editUser";
+import { getContact } from "./services/getContact";
+import { SearchBar } from "./components/SearchBar";
 
 function App() {
   const [usersData, setUsersData] = useState([]);
+  const [originalUserData, setOriginalUserData] = useState([]);
   const [showForm, setShowForm] = useState(false);
+
 
   useEffect(() => {
     getDataApi()
       .then((dataApi) => {
         setUsersData(dataApi);
+        setOriginalUserData(dataApi);
       })
       .catch((error) => {
         return error;
@@ -53,17 +58,38 @@ function App() {
     setShowForm(!showForm);
   };
 
+  const onSearchHandler = (contact) =>{        
+        if (contact.trim() === "") {
+          // Si el campo de búsqueda está vacío, restaurar los datos originales
+          setUsersData(originalUserData);
+        } else {
+          getContact(contact)
+            .then((dataContacts) => {
+              console.log(dataContacts);
+              setUsersData(usersData.filter((userData) => userData.name === contact));
+            })
+            .catch((error) => console.error("Error finding user:", error));
+        }
+    }
+
   return (
     <>
     <nav onToggleForm={handleToggleForm}>
-      <div>NAVBAR</div>
-      <ul>
-        <li> 
+      <h2>NAVBAR</h2>
+      <div>
+        <SearchBar onSearch={onSearchHandler}/>
+      </div>
+      
+        <div> 
             <button className="btn-formNew" onClick={handleToggleForm}>+ NEW</button> 
-        </li>
-      </ul>
+        </div>
+
     </nav>
-    {showForm && <FormRegister onFormSubmit={addData} />}
+    <div className="content-mainForm">
+      {showForm && <FormRegister onFormSubmit={addData} />}
+    </div>
+
+
       
       {usersData && usersData.length && (
         <CardUser

@@ -16,8 +16,8 @@ export function CardUser({ users, deleteData, editUserHandler }) {
       <div className="content-main">
         <h1>My Contacts</h1>
         <div className="content-container">
-          {users.map((userCard) => (
-            <div className="card-container-main" key={userCard.id}>
+          {users.map((userCard, index) => (
+            <div className="card-container-main" key={index}>
               <img
                 src={userCard.avatar}
                 alt="avatar user"

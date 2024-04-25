@@ -2,45 +2,38 @@
   "users": [
     {
       "id": "8lhej",
-      "avatar": "/src/assets/img/icon_first.png",
+      "avatar": "/src/assets/img/iconContacts.png",
       "name": "Luigi1",
       "surName": "mejia",
       "email": "luis.hoyos@globant.com"
     },
     {
       "id": "4afpp",
-      "avatar": "/src/assets/img/icon_first.png",
+      "avatar": "/src/assets/img/iconContacts.png",
       "name": "Luigi2",
       "surName": "mejia2",
       "email": "luis.hoyos2@globant.com"
     },
     {
       "id": "z8331",
-      "avatar": "/src/assets/img/icon_first.png",
+      "avatar": "/src/assets/img/iconContacts.png",
       "name": "Full",
       "surName": "kkk",
       "email": "estevanmolinavelez@gmail.com"
     },
     {
       "id": "p3bjw",
-      "avatar": "/src/assets/img/icon_first.png",
+      "avatar": "/src/assets/img/iconContacts.png",
       "name": "Full4",
       "surName": "kkk",
       "email": "estevanmolinavelez@gmail.com"
     },
     {
-      "id": "ize1o",
-      "avatar": "/src/assets/img/icon_first.png",
-      "name": "Full5",
-      "surName": "kkk",
-      "email": "estevanmolinavelez@gmail.com"
-    },
-    {
-      "id": "gy8o2",
-      "avatar": "/src/assets/img/icon_first.png",
-      "name": "Full6",
-      "surName": "kkk",
-      "email": "estevanmolinavelez@gmail.com"
+      "id": "t01yf",
+      "avatar": "/src/assets/img/iconContacts.png",
+      "name": "Juan",
+      "surName": "Lok",
+      "email": "email@email.com"
     }
   ]
 }
