@@ -14,7 +14,8 @@ export function CardUser({ users, deleteData, editUserHandler }) {
   return (
     <>
       <div className="content-main">
-        <h1>My Contacts</h1>
+        <h1>Contacts</h1>
+        <hr/>
         <div className="content-container">
           {users.map((userCard, index) => (
             <div className="card-container-main" key={index}>
@@ -27,8 +28,8 @@ export function CardUser({ users, deleteData, editUserHandler }) {
               <p>{userCard.email}</p>
               <hr />
               <div className="content-buttons">
-                <button onClick={() => handleShow(userCard)}>Edit</button>
-                <button onClick={() => deleteData(userCard.id)}>Delete</button>
+                <button  className="btn-edit"onClick={() => handleShow(userCard)}><span class="edit material-symbols-outlined">edit</span></button>
+                <button className="btn-delete" onClick={() => deleteData(userCard.id)}><span className="delete material-symbols-outlined">delete</span></button>
               </div>
             </div>
           ))}

@@ -75,13 +75,13 @@ function App() {
   return (
     <>
     <nav onToggleForm={handleToggleForm}>
-      <h2>NAVBAR</h2>
+      <h2>My Contacts</h2>
       <div>
         <SearchBar onSearch={onSearchHandler}/>
       </div>
       
         <div> 
-            <button className="btn-formNew" onClick={handleToggleForm}>+ NEW</button> 
+            <button className="btn-formNew" onClick={handleToggleForm}><span class="material-symbols-outlined">person_add</span> NEW</button> 
         </div>
 
     </nav>

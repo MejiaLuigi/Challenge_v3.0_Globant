@@ -17,6 +17,9 @@ nav {
 } 
 
 .btn-formNew{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   background-color: #0026ff6e;
   color: white;
   border-radius: 10px;
@@ -31,6 +34,10 @@ nav {
 .content-main{
   display: flex;
   flex-direction: column;
+}
+
+.content-main>h1{
+  text-align: start;
 }
 .content-container{
   display: flex;
@@ -59,6 +66,30 @@ nav {
   margin: 10px;
 }
 
+.btn-delete{
+  border: 1px solid rgba(235, 17, 17, 0.854);
+  border-radius: 5px;
+  height: 35px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+}
+.delete{
+  color: rgba(235, 17, 17, 0.854);
+
+}
+.btn-edit{
+  border: 1px solid rgba(17, 130, 235, 0.854);
+  border-radius: 5px;
+  height: 35px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+}
+.edit{
+  color: rgba(17, 130, 235, 0.854);
+
+}
 
 
 .searchBar{
@@ -136,10 +167,13 @@ nav {
 
 .button-form {
   background-color: #0400ff6e;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
   color: white;
   border-radius: 10px;
   height: 30px;
-  width: 55px;
+  width: 100px;
   font-family: "Roboto", sans-serif;
 }
 

@@ -46,7 +46,7 @@ export function FormRegister({onFormSubmit}) {
                 className="surName-content"
                 type="text"
                 name="surName"
-                placeholder="Enter Last Name"
+                placeholder="Enter Second Name"
                 value={surName}
                 onChange={(e) => setSurName(e.target.value)}
                 required
@@ -62,9 +62,8 @@ export function FormRegister({onFormSubmit}) {
             />
         </div>
         <div className="button-content">
-        <button className="button-form" type="submit">
-            Send
-        </button>
+        <button className="button-form" type="submit">Send
+        <span class="material-symbols-outlined">done</span></button>
         </div>
     </form>
     )
