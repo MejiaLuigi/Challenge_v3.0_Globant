@@ -20,6 +20,13 @@
       "name": "User",
       "surName": "Example 3",
       "email": "email@email.com"
+    },
+    {
+      "id": "t7a9x",
+      "avatar": "https://MejiaLuigi.github.io/Challenge_v3.0_Globant/assets/iconContacts-DVeruorY.png",
+      "name": "User ",
+      "surName": "Example 4",
+      "email": "email@email.com"
     }
   ]
 }
