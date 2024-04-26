@@ -1,25 +1,25 @@
 {
   "users": [
     {
-      "id": "hwrzr",
+      "id": "ziq1e",
+      "avatar": "/Challenge_v3.0_Globant/src/assets/img/iconContacts.png",
+      "name": "Luigi",
+      "surName": "mejia",
+      "email": "email@email.com"
+    },
+    {
+      "id": "fyvva",
       "avatar": "/Challenge_v3.0_Globant/src/assets/img/iconContacts.png",
       "name": "Camilo",
       "surName": "Andres",
-      "email": "estevanmolinavelez@gmail.com"
+      "email": "email@email.com"
     },
     {
-      "id": "wertyu",
+      "id": "fyqwb",
       "avatar": "/Challenge_v3.0_Globant/src/assets/img/iconContacts.png",
-      "name": "Camilo1",
-      "surName": "Andres2",
-      "email": "estevanmolinavelez@gmail.com"
-    },
-    {
-      "id": "ech3f",
-      "avatar": "https://MejiaLuigi.github.io/Challenge_v3.0_Globant/assets/iconContacts-DVeruorY.png",
-      "name": "renew",
-      "surName": "cg",
-      "email": "hoyosmejia14o6@gmail.com"
+      "name": "Juan",
+      "surName": "Andres",
+      "email": "email@email.com"
     }
   ]
 }
