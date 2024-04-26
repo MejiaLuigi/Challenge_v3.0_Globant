@@ -1,6 +1,6 @@
 export async function postDataApi (formData){
-    const urlApiPost = "http://localhost:3000/users";
-    // const urlApiPost = "https://my-json-server.typicode.com/MejiaLuigi/Challenge_v3.0_Globant/users";
+    // const urlApiPost = "http://localhost:3000/users";
+    const urlApiPost = "https://my-json-server.typicode.com/MejiaLuigi/Challenge_v3.0_Globant/users";
     console.log("see data", formData)
 
     const peticonPost = {
