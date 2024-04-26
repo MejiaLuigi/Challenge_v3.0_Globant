@@ -1,7 +1,8 @@
 export async function editUser(id, formEditData){
     console.log("this is my data: ", id)
 
-    const urlApiEdit = `http://localhost:3000/users/${id}`;
+    // const urlApiEdit = `http://localhost:3000/users/${id}`;
+    const urlApiEdit = `https://my-json-server.typicode.com/MejiaLuigi/Challenge_v3.0_Globant/users/${id}`;
 
     const peticonPatch = {
         method : "PATCH",
