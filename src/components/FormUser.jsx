@@ -1,6 +1,6 @@
 import { useState } from "react";
 // import iconUser from '../assets/img/iconContacts.png'
-import iconUser from '../../dist/assets/iconContacts-DVeruorY.png'
+import iconUser from '../assets/img/iconContacts.png'
 
 const generateRandomId = () => {
     const randomId = Math.random().toString(36).substring(2);

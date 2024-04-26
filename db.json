@@ -1,45 +1,24 @@
 {
   "users": [
     {
-      "id": "oh1df",
-      "avatar": "/Challenge_v3.0_Globant/dist/assets/iconContacts-DVeruorY.png",
-      "name": "User ",
-      "surName": "1",
+      "id": "5zj6a",
+      "avatar": "/Challenge_v3.0_Globant/src/assets/img/iconContacts.png",
+      "name": "User",
+      "surName": "Example 1",
       "email": "email@email.com"
     },
     {
-      "id": "uy4f3",
-      "avatar": "/Challenge_v3.0_Globant/dist/assets/iconContacts-DVeruorY.png",
-      "name": "User ",
-      "surName": "2",
+      "id": "idy0m",
+      "avatar": "/Challenge_v3.0_Globant/src/assets/img/iconContacts.png",
+      "name": "User",
+      "surName": "Example 2",
       "email": "email@email.com"
     },
     {
-      "id": "r90bb",
-      "avatar": "/Challenge_v3.0_Globant/dist/assets/iconContacts-DVeruorY.png",
-      "name": "User ",
-      "surName": "3",
-      "email": "email@email.com"
-    },
-    {
-      "id": "hljty",
-      "avatar": "/Challenge_v3.0_Globant/dist/assets/iconContacts-DVeruorY.png",
-      "name": "User ",
-      "surName": "4",
-      "email": "email@email.com"
-    },
-    {
-      "id": "o7lyg",
-      "avatar": "/Challenge_v3.0_Globant/dist/assets/iconContacts-DVeruorY.png",
-      "name": "User ",
-      "surName": "5",
-      "email": "email@email.com"
-    },
-    {
-      "id": "8qod5",
-      "avatar": "/Challenge_v3.0_Globant/dist/assets/iconContacts-DVeruorY.png",
-      "name": "User ",
-      "surName": "6",
+      "id": "npm8w",
+      "avatar": "/Challenge_v3.0_Globant/src/assets/img/iconContacts.png",
+      "name": "User",
+      "surName": "Example 3",
       "email": "email@email.com"
     }
   ]
