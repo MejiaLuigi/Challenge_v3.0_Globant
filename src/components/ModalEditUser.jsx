@@ -8,8 +8,8 @@ import Modal from "react-bootstrap/Modal";
 export function ModalEditUsers({ show, handleClose, user, editUserHandler }) {
   const [formData, setFormData] = useState({
     id: user.id,
-    name: user.name,
-    surName: user.surName,
+    firstName: user.firstName,
+    surname: user.surname,
     email: user.email,
   });
 
@@ -37,17 +37,17 @@ export function ModalEditUsers({ show, handleClose, user, editUserHandler }) {
             <Form.Label>Email address</Form.Label>
             <Form.Control
               type="text"
-              name="name"
+              name="firstName"
               placeholder="Enter First Name"
-              value={formData.name}
+              value={formData.firstName}
               onChange={handleInputChange}
               required
             />
             <Form.Control
               type="text"
-              name="surName"
+              name="surname"
               placeholder="Enter Last Name"
-              value={formData.surName}
+              value={formData.surname}
               onChange={handleInputChange}
               required
             />

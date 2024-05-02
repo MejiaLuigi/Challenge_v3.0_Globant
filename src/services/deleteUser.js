@@ -1,6 +1,7 @@
 export async function deleteUser(id) {
   // const urlApiDelete = `http://localhost:3000/users/${id}`;
-  const urlApiDelete = `https://my-json-server.typicode.com/MejiaLuigi/Challenge_v3.0_Globant/users/${id}`;
+  // const urlApiDelete = `https://my-json-server.typicode.com/MejiaLuigi/Challenge_v3.0_Globant/users/${id}`;
+  const urlApiDelete = `https://challenge-wgie.onrender.com/api/delete/${id}`;
 
   const peticonDelete = {
     method: "DELETE",

@@ -20,16 +20,18 @@ export function CardUser({ users, deleteData, editUserHandler }) {
           {users.map((userCard, index) => (
             <div className="card-container-main" key={index}>
               <img
-                src={userCard.avatar}
+                src='https://avatar.iran.liara.run/public'
                 alt="avatar user"
                 className="imgCard"
               />
-              <h2>{`${userCard.name} ${userCard.surName}`}</h2>
-              <p>{userCard.email}</p>
-              <hr />
-              <div className="content-buttons">
-                <button  className="btn-edit"onClick={() => handleShow(userCard)}><span class="edit material-symbols-outlined">edit</span></button>
-                <button className="btn-delete" onClick={() => deleteData(userCard.id)}><span className="delete material-symbols-outlined">delete</span></button>
+              <div className="card-content-text">
+                <h2>{`${userCard.firstName} ${userCard.surname}`}</h2>
+                <p>{userCard.email}</p>
+                <hr />
+                <div className="content-buttons">
+                  <button title="Edit"  className="btn-edit"onClick={() => handleShow(userCard)}><span className="edit material-symbols-outlined">edit</span></button>
+                  <button title="Delete" className="btn-delete" onClick={() => deleteData(userCard.id)}><span className="delete material-symbols-outlined">delete</span></button>
+                </div>
               </div>
             </div>
           ))}

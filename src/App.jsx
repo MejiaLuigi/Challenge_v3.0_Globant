@@ -10,6 +10,7 @@ import { editUser } from "./services/editUser";
 import { getContact } from "./services/getContact";
 import { SearchBar } from "./components/SearchBar";
 
+
 function App() {
   const [usersData, setUsersData] = useState([]);
   const [originalUserData, setOriginalUserData] = useState([]);
@@ -66,7 +67,7 @@ function App() {
           getContact(contact)
             .then((dataContacts) => {
               console.log(dataContacts);
-              setUsersData(usersData.filter((userData) => userData.name === contact));
+              setUsersData(usersData.filter((userData) => userData.firstName === contact));
             })
             .catch((error) => console.error("Error finding user:", error));
         }
@@ -74,17 +75,17 @@ function App() {
 
   return (
     <>
-    <nav onToggleForm={handleToggleForm}>
-      <h2>My Contacts</h2>
-      <div>
-        <SearchBar onSearch={onSearchHandler}/>
+   
+      <div className="contentSearch">
+        
+          <SearchBar onSearch={onSearchHandler}/>
+          <div> 
+              <button className="btn-formNew" onClick={handleToggleForm}><span className="material-symbols-outlined">person_add</span> NEW</button> 
+          </div>
+        
       </div>
-      
-        <div> 
-            <button className="btn-formNew" onClick={handleToggleForm}><span class="material-symbols-outlined">person_add</span> NEW</button> 
-        </div>
 
-    </nav>
+
     <div className="content-mainForm">
       {showForm && <FormRegister onFormSubmit={addData} />}
     </div>

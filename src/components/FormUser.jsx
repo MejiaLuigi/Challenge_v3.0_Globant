@@ -1,6 +1,7 @@
 import { useState } from "react";
 // import iconUser from '../assets/img/iconContacts.png'
-import iconUser from 'Challenge_v3.0_Globant/assets/iconContacts-DVeruorY.png'
+// import iconUser from 'https://w7.pngwing.com/pngs/178/595/png-transparent-user-profile-computer-icons-login-user-avatars-thumbnail.png'
+// import iconUser from 'Challenge_v3.0_Globant/assets/iconContacts-DVeruorY.png'
 
 const generateRandomId = () => {
     const randomId = Math.random().toString(36).substring(2);
@@ -18,10 +19,9 @@ export function FormRegister({onFormSubmit}) {
         event.preventDefault();
 
         const formData = {
-            id: `${generateRandomId()}`,
-            avatar: iconUser,
-            name: name,
-            surName: surName,
+            img: 'https://w7.pngwing.com/pngs/178/595/png-transparent-user-profile-computer-icons-login-user-avatars-thumbnail.png',
+            firstName: name,
+            surname: surName,
             email: email
         }
         
@@ -63,8 +63,8 @@ export function FormRegister({onFormSubmit}) {
             />
         </div>
         <div className="button-content">
-        <button className="button-form" type="submit">Send
-        <span class="material-symbols-outlined">done</span></button>
+            <button className="button-form" type="submit">Send
+            <span className="material-symbols-outlined">done</span></button>
         </div>
     </form>
     )

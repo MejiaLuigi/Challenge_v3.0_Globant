@@ -1,12 +1,14 @@
-export async function postDataApi (formData){
+export async function postDataApi (dataReceived){
     // const urlApiPost = "http://localhost:3000/users";
-    const urlApiPost = "https://my-json-server.typicode.com/MejiaLuigi/Challenge_v3.0_Globant/users";
-    console.log("see data", formData)
+    // const urlApiPost = "https://my-json-server.typicode.com/MejiaLuigi/Challenge_v3.0_Globant/users";
+    const urlApiPost = "https://challenge-wgie.onrender.com/api/save";
+    
+    console.log("see data", dataReceived)
 
     const peticonPost = {
         method : "POST",
         headers:{"Content-Type": "application/json"},
-        body: JSON.stringify(formData)
+        body: JSON.stringify(dataReceived)
 
     }
 
