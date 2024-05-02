@@ -9,6 +9,7 @@ Se le añade funcionalidad a botones (Delete, Edit)
 Se crea nuevo componente llamado "ModalEdit", es cual esta a un 76% de funcionabilidad.
 Se añade nuevo servicios (Delete, Edit)
 Se agrega despliegue a web por json server y github pages
+se agrega endpoint de Jnader
 
 
 ### Changed
